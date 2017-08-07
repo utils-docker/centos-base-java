@@ -14,6 +14,8 @@ ENV admin_password ${admin_password:-"password"}
 ARG jdk_url
 ENV jdk_url ${jdk_url:-"http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz"}
 
+ENV JAVA_HOME '/opt/jdk/'
+
 #####################
 
 WORKDIR /opt/
