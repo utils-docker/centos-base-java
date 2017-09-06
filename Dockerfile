@@ -17,6 +17,10 @@ ENV jdk_url ${jdk_url:-"http://download.oracle.com/otn-pub/java/jdk/8u144-b01/09
 ARG JAVA_HOME
 ENV JAVA_HOME ${JAVA_HOME:-"/opt/jdk"}
 
+ENV LC_ALL=en_US.UTF-8
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US.UTF-8
+
 #####################
 
 WORKDIR /opt/
